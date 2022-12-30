@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Tetrad
+comment0.text=\n\ This\ is\ the\ Tetrad\ classes\ that\ handles\ with\ Tetris'\ bricks\n\ \n\ @author\ Carol\ Song\n\ @version\ February\ 22,\ 2022\n
+comment1.params=grid
+comment1.target=Tetrad(MyBoundedGrid)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Tetrad.\n\ Randomly\ creates\ a\ block\ to\ put\ into\ the\ grid.\n\ Initializes\ the\ locations\ of\ the\ blocks,\ relative\ to\ which\ block\ was\ randomly\ chosen.\n\ @param\ grid\ MyBoundedGrid<Block>\n
+comment2.params=grid\ locs
+comment2.target=void\ addToLocation(MyBoundedGrid,\ Location[])
+comment2.text=\n\ Puts\ all\ the\ blocks\ into\ the\ grid\ as\ a\ full\ brick\n\ @precondition\ blocks\ are\ not\ in\ any\ grid\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ locs.length\ \=\ 4\n\ @postcondition\ The\ locations\ of\ blocks\ match\ locs,\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ and\ blocks\ have\ been\ put\ in\ the\ grid\n\ @param\ grid\ MyBoundedGrid<Block>\ there\ are\ no\ blocks\ in\ this\ grid\n\ @param\ locs\ Location[]\ location\ where\ you\ want\ the\ blocks\n
+comment3.params=
+comment3.target=Location[]\ removeBlocks()
+comment3.text=\n\ Removes\ all\ four\ blocks\n\ @precondition\ Blocks\ are\ in\ the\ grid.\n\ @postcondition\ Returns\ old\ locations\ of\ blocks.\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blocks\ have\ been\ removed\ from\ the\ grid\n\ @return\ Location[]\ locations\ of\ the\ old\ blocks\n
+comment4.params=grid\ locs
+comment4.target=boolean\ areEmpty(MyBoundedGrid,\ Location[])
+comment4.text=\n\ Tests\ if\ the\ array\ of\ locations\ are\ valid\ and\ empty.\n\ @precondition\ none\n\ @postcondition\ returns\ true\ if\ each\ of\ locs\ is\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ valid\ and\ empty\ in\ grid.\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ false\ otherwise\n\ @param\ grid\ MyBoundedGrid<Block>\n\ @param\ locs\ Location[]\ locations\ that\ are\ being\ tested\n\ @return\ boolean\ true\ if\ the\ locations\ are\ empty\ and\ valid.\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ false\ if\ they\ aren't\n
+comment5.params=deltaRow\ deltaCol
+comment5.target=boolean\ translate(int,\ int)
+comment5.text=\n\ Shifts\ the\ active\ tetrad\ the\ inputted\ number\ of\ rows\ and\ columns.\n\ @precondition\ none\n\ @postcondition\ attemps\ to\ move\ this\ tetrad\ deltaRow\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rows\ down\ and\ deltaCol\ columns\ to\ the\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ right,\ if\ those\ positions\ are\ valid\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ and\ empty;\ returns\ true\ if\ successful\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ and\ false\ otherwise.\n\ @param\ deltaRow\ int\n\ @param\ deltaCol\ int\n\ @return\ boolean\ true\ if\ the\ tetrad\ can\ be\ translated\ to\ the\ new\ location\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ false\ if\ it\ can't\n
+comment6.params=
+comment6.target=boolean\ rotate()
+comment6.text=\n\ Attempts\ to\ rotate\ this\ tetrad\ clockwise\ by\ 90\ degrees\ about\ its\n\ center,\ if\ the\ necessary\ positions\ are\ empty;\ returns\ true\ if\ \n\ successful\ and\ false\ otherwise\n\ \n\ @return\ boolean\ true\ if\ the\ tetrad\ can\ be\ rotated.\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ false\ if\ it\ can't\n
+numComments=7
